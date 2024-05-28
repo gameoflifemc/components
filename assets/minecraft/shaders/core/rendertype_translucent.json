@@ -4,7 +4,7 @@
         "srcrgb": "srcalpha",
         "dstrgb": "1-srcalpha"
     },
-    "vertex": "common/rendertype_block_translucent",
+    "vertex": "rendertype_block_translucent",
     "fragment": "rendertype_translucent",
     "attributes": [
         "Position",

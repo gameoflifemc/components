@@ -40,7 +40,7 @@ void main() {
     }
     // tab completer shadow recolor
     if (r <= 62.3 / 255.0 && r > 62.2 / 255.0 && g <= 62.3 / 255.0 && g > 62.2 / 255.0 && b == 0.0) {
-        color = vec4(38.0 / 255.0, 17.0 / 255.0, 62.0 / 255.0, opacity);
+        color = vec4(BRAND_SHADOW, opacity);
     }
     // challenge advancement text recolor
     if (r == 252.0 / 255.0 && g <= 134.5 / 255.0 && g > 133.5 / 255.0 && b == 252.0 / 255.0) {

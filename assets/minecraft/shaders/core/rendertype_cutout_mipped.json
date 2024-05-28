@@ -4,7 +4,7 @@
         "srcrgb": "srcalpha",
         "dstrgb": "1-srcalpha"
     },
-    "vertex": "common/rendertype_block",
+    "vertex": "rendertype_block",
     "fragment": "rendertype_cutout_mipped",
     "attributes": [
         "Position",
