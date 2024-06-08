@@ -1,0 +1,16 @@
+{"providers":[
+    {"type":"space","advances":{}},
+    {"type":"bitmap","file":"gui/font/mark/error.png","ascent":7,"height":8,"chars":["􍰵"]},
+    {"type":"bitmap","file":"gui/font/mark/locked.png","ascent":7,"height":8,"chars":["􊹊"]},
+    {"type":"bitmap","file":"gui/font/mark/success.png","ascent":7,"height":8,"chars":["􇔩"]},
+    {"type":"bitmap","file":"gui/font/mark/unlocked.png","ascent":7,"height":8,"chars":["􉷈"]},
+    {"type":"bitmap","file":"gui/font/mark/usage.png","ascent":7,"height":8,"chars":["􂶫"]},
+    {"type":"bitmap","file":"gui/font/mark/warning.png","ascent":7,"height":8,"chars":["􃽢"]},
+    {"type":"bitmap","file":"gui/font/mark/discord.png","ascent":7,"height":8,"chars":["􂜪"]},
+    {"type":"bitmap","file":"gui/font/mark/reward.png","ascent":7,"height":8,"chars":["􏃐"]},
+    {"type":"bitmap","file":"gui/font/mark/debug.png","ascent":7,"height":8,"chars":["􊀈"]},
+    {"type":"bitmap","file":"gui/font/mark/link.png","ascent":7,"height":8,"chars":["􉩙"]},
+    {"type":"bitmap","file":"gui/font/icon/shift.png","ascent":9,"height":12,"chars":["􈢢"]},
+    {"type":"bitmap","file":"gui/font/icon/rightclick.png","ascent":9,"height":11,"chars":["􉳨"]},
+    {"type":"bitmap","file":"gui/font/icon/leftclick.png","ascent":9,"height":11,"chars":["􍐭"]}
+]}

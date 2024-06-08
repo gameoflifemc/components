@@ -1,13 +1,14 @@
 #version 150
 
 #moj_import <fog.glsl>
-#moj_import <branding.glsl>
+#moj_import <colors.glsl>
 
 uniform sampler2D Sampler0;
 uniform vec4 ColorModulator;
 uniform vec4 FogColor;
 uniform float FogStart;
 uniform float FogEnd;
+uniform float GameTime;
 
 in float vertexDistance;
 in vec4 vertexColor;
@@ -26,14 +27,6 @@ void main() {
     float r = color.r;
     float g = color.g;
     float b = color.b;
-    // xp text recolor
-    if (r <= 126.50 / 255.0 && r > 126.49 / 255.0 && g == 252.0 / 255.0 && b <= 31.63 / 255.0 && b > 31.62 / 255.0) {
-        color = vec4(53.0 / 255.0, 228.0 / 255.0, 56.0 / 255.0, opacity);
-    }
-    // xp text shadow recolor
-    if (r <= 31.7 / 255.0 && r > 31.6 / 255.0 && g <= 62.3 / 255.0 && g > 62.25 / 255.0 && b <= 8.0 / 255.0 && b > 7.9 / 255.0) {
-        color = vec4(34.0 / 255.0, 64.0 / 255.0, 35.0 / 255.0, opacity);
-    }
     // task & goal advancement text + tab completer text recolor
     if (color.rgb == vec3(252.0 / 255.0, 252.0 / 255.0, 0.0)) {
         color = vec4(BRAND_COLOR, opacity);
@@ -54,6 +47,15 @@ void main() {
         } else {
             // return full opacity to icons
             color.a = 1.0;
+        }
+        if (r == 0.0 && g == 0.0 && b >= 21.5 / 255.0 && b <= 36.5 / 255.0) {
+            // loading wheel animation
+            float c = 1.0 - fract(GameTime * 1200) - 0.125 * (int(b * 255.0) % 20 / 2);
+            if (c <= 0.0) {
+                c += 1.0;
+            }
+            c += 0.25;
+            color = vec4(c, c, c, 1.0);
         }
     }
     fragColor = linear_fog(color, vertexDistance, FogStart, FogEnd, FogColor);

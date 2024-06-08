@@ -1,6 +1,6 @@
 #version 150
 
-#moj_import <branding.glsl>
+#moj_import <colors.glsl>
 
 in vec4 vertexColor;
 

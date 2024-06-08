@@ -18,9 +18,14 @@ out vec2 texCoord0;
 out float depth;
 
 void main() {
-    gl_Position = ProjMat * ModelViewMat * vec4(Position, 1);
+	gl_Position = ProjMat * ModelViewMat * vec4(Position, 1.0);
     vertexDistance = fog_distance(Position, FogShape);
     vertexColor = Color * texelFetch(Sampler2, UV2 / 16, 0);
     texCoord0 = UV0;
+	// get depth
     depth = Position.z;
+	// remove xp text
+	if (depth == 600.0) {
+		vertexColor = vec4(0.0, 0.0, 0.0, 0.0);
+	}
 }
