@@ -1,10 +1,8 @@
 {
 	"pack": {
-		"pack_format": 32,
+		"pack_format": 34,
 		"description": [
-			{"text":"Package for version 1.20.6","color":"#00FFFF"},"\n",
-			{"text":"􅹭􇥑","color":"#FFFFFF"},
-			{"text":"Game of Life Components","color":"#9944FF"}
+			{"text":"$%","color":"#FFFFFF","font":"minecraft:pack"}
 		]
 	}
 }
