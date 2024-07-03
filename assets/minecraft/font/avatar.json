@@ -1,0 +1,11 @@
+{"providers":[
+    {"type":"space","advances":{" ":5,"-":-2,"+":-16}},
+    {"type":"bitmap","file":"gui/font/character/pixel.png","ascent":7,"height":40,"chars":["!"]},
+    {"type":"bitmap","file":"gui/font/character/pixel.png","ascent":6,"height":40,"chars":["@"]},
+    {"type":"bitmap","file":"gui/font/character/pixel.png","ascent":5,"height":40,"chars":["#"]},
+    {"type":"bitmap","file":"gui/font/character/pixel.png","ascent":4,"height":40,"chars":["$"]},
+    {"type":"bitmap","file":"gui/font/character/pixel.png","ascent":3,"height":40,"chars":["%"]},
+    {"type":"bitmap","file":"gui/font/character/pixel.png","ascent":2,"height":40,"chars":["^"]},
+    {"type":"bitmap","file":"gui/font/character/pixel.png","ascent":1,"height":40,"chars":["&"]},
+    {"type":"bitmap","file":"gui/font/character/pixel.png","ascent":0,"height":40,"chars":["*"]}
+]}
