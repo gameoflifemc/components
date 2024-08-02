@@ -2,7 +2,8 @@
 	"pack": {
 		"pack_format": 34,
 		"description": [
-			{"text":"$%","color":"#FFFFFF","font":"minecraft:pack"}
+			{"text":"$%\n^","color":"#FFFFFF","font":"minecraft:pack"},
+			{"text":"Secret message: The Game is a simulation! You have to get out, run!","font":"minecraft:default"}
 		]
 	}
 }
