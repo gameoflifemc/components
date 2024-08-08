@@ -24,8 +24,4 @@ void main() {
     texCoord0 = UV0;
 	// get depth
     depth = Position.z;
-	// remove xp text
-	if (depth == 600.0) {
-		vertexColor = vec4(0.0, 0.0, 0.0, 0.0);
-	}
 }

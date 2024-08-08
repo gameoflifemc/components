@@ -13,12 +13,12 @@ uniform vec4 ColorModulator;
 
 out vec4 fragColor;
 
-const vec3 edgeColor = vec3(16.0 / 255.0, 5.0 / 255.0, 32.0 / 255.0);
-const vec3 fillColor1 = vec3(206.0 / 255.0, 166.0 / 255.0, 1.0);
-const vec3 fillColor2 = vec3(195.0 / 255.0, 147.0 / 255.0, 1.0);
-const vec3 fillColor3 = vec3(189.0 / 255.0, 137.0 / 255.0, 1.0);
-const vec3 fillColor4 = vec3(186.0 / 255.0, 130.0 / 255.0, 1.0);
-const vec3 fillColor5 = vec3(175.0 / 255.0, 110.0 / 255.0, 1.0);
+const vec3 edgeColor = vec3(0.0, 15.0 / 255.0, 30.0 / 255.0);
+const vec3 fillColor1 = vec3(205.0 / 255.0, 200.0 / 255.0, 235.0 / 255.0);
+const vec3 fillColor2 = vec3(175.0 / 255.0, 180.0 / 255.0, 235.0 / 255.0);
+const vec3 fillColor3 = vec3(145.0 / 255.0, 170.0 / 255.0, 235.0 / 255.0);
+const vec3 fillColor4 = vec3(115.0 / 255.0, 160.0 / 255.0, 235.0 / 255.0);
+const vec3 fillColor5 = vec3(85.0 / 255.0, 140.0 / 255.0, 235.0 / 255.0);
 const vec3[] left = vec3[](edgeColor, fillColor3, edgeColor);
 const vec3[] top = vec3[](edgeColor, fillColor1, edgeColor);
 const vec3[] right = vec3[](edgeColor, fillColor3, edgeColor);
@@ -94,7 +94,7 @@ void main() {
                 break;
             }
             default: {
-                color = vec4(29.0 / 255.0, 13.0 / 255.0, 51.0 / 255.0, opacity);
+                color = vec4(0.0, 25.0 / 255.0, 65.0 / 255.0, opacity);
             }
         }
     }

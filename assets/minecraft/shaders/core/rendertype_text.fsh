@@ -24,11 +24,12 @@ void main() {
     if (opacity < 0.1) {
         discard;
     }
+    vec3 rgb = color.rgb;
     float r = color.r;
     float g = color.g;
     float b = color.b;
     // task & goal advancement text + tab completer text recolor
-    if (color.rgb == vec3(252.0 / 255.0, 252.0 / 255.0, 0.0)) {
+    if (rgb == vec3(252.0 / 255.0, 252.0 / 255.0, 0.0)) {
         color = vec4(BRAND_COLOR, opacity);
     }
     // tab completer shadow recolor
@@ -39,6 +40,10 @@ void main() {
     if (r == 252.0 / 255.0 && g <= 134.5 / 255.0 && g > 133.5 / 255.0 && b == 252.0 / 255.0) {
         color = vec4(240.0 / 255.0, 200.0 / 255.0, 0.0, opacity);
     }
+	// remove xp text
+	if (depth == 600.0 && (rgb == vec3(0.0, 0.0, 0.0) || (r <= 126.5 / 255.0 && r > 125.5 / 255.0 && g == 252.0 / 255.0 && b <= 32.5 / 255.0 && b > 31.5 / 255.0))) {
+		color = vec4(0.0, 0.0, 0.0, 0.0);
+	}
     // icons
     if (opacity > 0.49 && opacity < 0.51) {
         if (mod(depth, 1.0) == 0.0) {
