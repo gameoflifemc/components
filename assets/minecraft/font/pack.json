@@ -1,4 +1,4 @@
 {"providers":[
     {"type":"space","advances":{"$":-36,"^":200}},
-    {"type":"bitmap","file":"gui/font/resource_pack_frame.png","ascent":21,"height":36,"chars":["%"]}
+    {"type":"bitmap","file":"gui/font/misc/resource_pack_frame.png","ascent":21,"height":36,"chars":["%"]}
 ]}
