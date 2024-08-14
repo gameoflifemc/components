@@ -1,10 +1,10 @@
 {
-    "debug.prefix":    "§f􊀈§7",
-    "mount.onboard":    "§7Use §f􈢢 §7to dismount!",
+    "debug.prefix":    "§f§7",
+    "mount.onboard":    "§7Use §f §7to dismount!",
     "menu.game":    "",
-    "menu.returnToGame":    "§f􅺳",
-    "menu.disconnect":    "§f􍏉",
-    "container.brewing":    "§f􅚬                     §f􎃄",
+    "menu.returnToGame":    "§f",
+    "menu.disconnect":    "§f",
+    "container.brewing":    "",
     "container.crafting":    "",
     "container.inventory":    "",
     "container.hopper":    "",
@@ -28,5 +28,6 @@
     "container.cartography_table":    "",
     "container.stonecutter":    "",
     "container.upgrade":    "",
-    "resourcePack.server.name":    "Game of Life"
+    "resourcePack.server.name":    "Game of Life",
+    "multiplayer.downloadingTerrain":    ""
 }

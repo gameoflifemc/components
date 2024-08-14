@@ -63,5 +63,14 @@ void main() {
             color = vec4(c, c, c, 1.0);
         }
     }
+    // transparent icons
+    if (opacity > 0.24 && opacity < 0.26) {
+        if (mod(depth, 1.0) == 0.0) {
+            // remove icon shadows
+            discard;
+        }
+    }
+
+
     fragColor = linear_fog(color, vertexDistance, FogStart, FogEnd, FogColor);
 }

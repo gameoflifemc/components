@@ -1,16 +1,15 @@
 {"providers":[
     {"type":"space","advances":{}},
-    {"type":"bitmap","file":"gui/font/mark/error.png","ascent":7,"height":8,"chars":["􍰵"]},
-    {"type":"bitmap","file":"gui/font/mark/locked.png","ascent":7,"height":8,"chars":["􊹊"]},
-    {"type":"bitmap","file":"gui/font/mark/success.png","ascent":7,"height":8,"chars":["􇔩"]},
-    {"type":"bitmap","file":"gui/font/mark/unlocked.png","ascent":7,"height":8,"chars":["􉷈"]},
-    {"type":"bitmap","file":"gui/font/mark/usage.png","ascent":7,"height":8,"chars":["􂶫"]},
-    {"type":"bitmap","file":"gui/font/mark/warning.png","ascent":7,"height":8,"chars":["􃽢"]},
-    {"type":"bitmap","file":"gui/font/mark/discord.png","ascent":7,"height":8,"chars":["􂜪"]},
-    {"type":"bitmap","file":"gui/font/mark/reward.png","ascent":7,"height":8,"chars":["􏃐"]},
-    {"type":"bitmap","file":"gui/font/mark/debug.png","ascent":7,"height":8,"chars":["􊀈"]},
-    {"type":"bitmap","file":"gui/font/mark/link.png","ascent":7,"height":8,"chars":["􉩙"]},
-    {"type":"bitmap","file":"gui/font/icon/shift.png","ascent":9,"height":12,"chars":["􈢢"]},
-    {"type":"bitmap","file":"gui/font/icon/rightclick.png","ascent":9,"height":11,"chars":["􉳨"]},
-    {"type":"bitmap","file":"gui/font/icon/leftclick.png","ascent":9,"height":11,"chars":["􍐭"]}
+    {"type":"bitmap","chars":["\ue000"],"file":"gui/font/mark/debug.png","ascent":8,"height":8},
+    {"type":"bitmap","chars":["\ue001"],"file":"gui/font/mark/discord.png","ascent":8,"height":8},
+    {"type":"bitmap","chars":["\ue002"],"file":"gui/font/mark/error.png","ascent":8,"height":8},
+    {"type":"bitmap","chars":["\ue003"],"file":"gui/font/mark/info.png","ascent":8,"height":8},
+    {"type":"bitmap","chars":["\ue004"],"file":"gui/font/mark/success.png","ascent":8,"height":8},
+    {"type":"bitmap","chars":["\ue005"],"file":"gui/font/mark/warning.png","ascent":8,"height":8},
+    {"type":"bitmap","chars":["\ue006"],"file":"gui/font/icon/shift.png","ascent":9,"height":12},
+    {"type":"bitmap","chars":["\ue007"],"file":"gui/font/icon/rightclick.png","ascent":9,"height":11},
+    {"type":"bitmap","chars":["\ue008"],"file":"gui/font/icon/leftclick.png","ascent":9,"height":11},
+    {"type":"bitmap","chars":["\ue009"],"file":"gui/font/screens/background.png","ascent":512,"height":2500},
+    {"type":"bitmap","chars":["\ue010"],"file":"gui/font/misc/logo.png","ascent":89,"height":90},
+    {"type":"bitmap","chars":["\ue011"],"file":"gui/font/misc/info.png","ascent":7,"height":108}
 ]}
