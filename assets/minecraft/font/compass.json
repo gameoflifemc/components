@@ -1,0 +1,8 @@
+{"providers":[
+    {"type":"space","advances":{"_":3}},
+    {"type":"bitmap","file":"gui/font/character/compass.png","ascent":20,"height":28,"chars":["\u0030\u0031\u0032\u0033\u0034\u0035\u0036\u0037\u0038\u0039\u004e\u0045\u0053\u0057"]},
+    {"type":"bitmap","file":"gui/font/screens/compass.png","ascent":10,"height":256,"chars":["@"]},
+    {"type":"bitmap","file":"gui/font/icon/mine.png","ascent":48,"height":48,"chars":["M"]},
+    {"type":"bitmap","file":"gui/font/icon/farm.png","ascent":48,"height":48,"chars":["F"]},
+    {"type":"bitmap","file":"gui/font/icon/bank.png","ascent":48,"height":48,"chars":["B"]}
+]}
