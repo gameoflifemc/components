@@ -4,6 +4,6 @@
         "layer0": "item/knowledge_book"
     },
     "overrides": [
-        {"predicate": {"custom_model_data": 400000},"model": "item/.gol/csas_logo"}
+        {"predicate": {"custom_model_data":400000},"model": "item/gol/csas_logo"}
     ]
 }

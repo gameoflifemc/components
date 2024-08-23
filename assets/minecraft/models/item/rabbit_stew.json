@@ -1,7 +1,7 @@
 {
-  "parent": "minecraft:item/generated",
+  "parent": "minecraft:item/_parent_bowl",
   "textures": {
-    "particle": "minecraft:item/transparent",
-    "layer0": "minecraft:item/rabbit_stew"
+    "layer0": "minecraft:item/rabbit_stew",
+    "particle": "minecraft:item/transparent"
   }
 }
