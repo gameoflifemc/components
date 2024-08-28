@@ -4,6 +4,7 @@
 
 in vec2 texCoord0;
 in float freezeOverlay;
+in float depth;
 
 uniform sampler2D Sampler0;
 uniform vec4 ColorModulator;
@@ -22,6 +23,11 @@ void main() {
             color.a = 1;
         }
         modulator.a = 1;
+    }
+    float r = color.r;
+    // remove empty player heads from TAB list
+    if (depth == 2800.0 && r >= 0.332 && r <= 0.334 && color.g >= 0.332 && color.g <= 0.334 && color.b >= 0.332 && color.b <= 0.334) {
+        color = vec4(0);
     }
     if (opacity == 0.0) {
         discard;

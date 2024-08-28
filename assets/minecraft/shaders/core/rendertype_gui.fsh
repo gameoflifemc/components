@@ -8,6 +8,7 @@ in vec3 Pos1;
 in vec3 Pos2;
 in vec3 Pos3;
 in float tooltip;
+in float depth;
 
 uniform vec4 ColorModulator;
 
@@ -39,7 +40,17 @@ void main() {
     float opacity = color.a;
     // convert white to signature color
     if (color.rgb == vec3(1)) {
-        color = vec4(BRAND_COLOR, opacity);
+        if (depth == 2800.0) {
+            color = vec4(BRAND_SHADOW, 0.5);
+        } else {
+            color = vec4(BRAND_COLOR, opacity);
+        }
+    } else if (color.rgb == vec3(0)) {
+        if (depth == 2800.0 || depth == 2600.0) {
+            color = vec4(0);
+        }
+    } else if (color.rgb == vec3(208.0 / 255)) {
+        color = vec4(BRAND_COLOR, 0.5);
     }
     // nicer tooltips
     if (tooltip == 1.0) {

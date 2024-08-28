@@ -15,10 +15,11 @@ out vec3 Pos1;
 out vec3 Pos2;
 out vec3 Pos3;
 out float tooltip;
+out float depth;
 
 void main() {
     Pos = Position;
-    float depth = Position.z;
+    depth = Position.z;
     int corner = gl_VertexID % 4;
     tooltip = 0.0;
     if (depth == 400 && ProjMat[2][3] == 0) {

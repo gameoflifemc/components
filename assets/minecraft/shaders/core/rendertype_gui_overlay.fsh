@@ -14,6 +14,6 @@ void main() {
     }
     fragColor = color * ColorModulator;
     if (color.r == 239.0 / 255.0) {
-        fragColor = vec4(vec3(0.0, 0.0, 0.0) / 255, color.a);
+        fragColor = vec4(0.0, 0.0, 0.0, color.a);
     }
 }

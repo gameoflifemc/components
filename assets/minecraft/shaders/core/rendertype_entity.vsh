@@ -33,15 +33,12 @@ void main() {
     lightMapColor = texelFetch(Sampler2, UV2 / 16, 0);
     overlayColor = texelFetch(Sampler1, UV1, 0);
     texCoord0 = UV0;
-
     // fade
     float fade = max(0.0, vertexDistance - FADEDISTANCE);
     fade *= fade;
-    
     // animation and scaling
     float anim = (sin(mod(1600.0, TWOPI)) / 8.0) * 0.25;
     float scale = clamp(fade * (anim + 0.75) * 0.1 / FADESCALE, 0.0, 1.0);
-    
     // skip inventory items
     if (ProjMat[3][2] / (ProjMat[2][2] + 1) >= 0.0) {
         // position with offset
