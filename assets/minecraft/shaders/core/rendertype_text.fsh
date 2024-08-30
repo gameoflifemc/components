@@ -53,7 +53,7 @@ void main() {
             // return full opacity to icons
             color.a = 1.0;
         }
-        if (r == 0.0 && g == 0.0 && b >= 21.5 / 255.0 && b <= 36.5 / 255.0) {
+        if (r >= 0.09 && r <= 0.1 && g == 0.0 && b >= 21.5 / 255.0 && b <= 36.5 / 255.0) {
             // loading wheel animation
             float c = 1.0 - fract(GameTime * 1200) - 0.125 * (int(b * 255.0) % 20 / 2);
             if (c <= 0.0) {
@@ -74,9 +74,9 @@ void main() {
         }
     }
     // compass
-    if (r == 0.0 && g == 0.0 && b > 0.5 / 255.0 && b < 20.5 / 255.0) {
+    if (r == 0.0 && g >= 0.09 && g <= 0.1 && b >= 0.5 / 255.0 && b < 49.5 / 255.0) {
         // compass side transparency
-        color = vec4(1, 1, 1, b * 255.0 / 28.0);
+        color = vec4(1, 1, 1, b * 255.0 / 40.0 + 0.05);
     }
     fragColor = linear_fog(color, vertexDistance, FogStart, FogEnd, FogColor);
 }

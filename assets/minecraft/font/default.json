@@ -1,5 +1,5 @@
 {"providers":[
-    {"type":"space","advances":{}},
+    {"type":"space","advances":{"\ueeee":-10}},
     {"type":"bitmap","chars":["🍎"],"file":"gui/font/icon/action.png","ascent":8,"height":9},
     {"type":"bitmap","chars":["\ue000"],"file":"gui/font/mark/debug.png","ascent":8,"height":8},
     {"type":"bitmap","chars":["\ue001"],"file":"gui/font/mark/discord.png","ascent":8,"height":8},
@@ -12,5 +12,9 @@
     {"type":"bitmap","chars":["\ue008"],"file":"gui/font/icon/leftclick.png","ascent":9,"height":11},
     {"type":"bitmap","chars":["\ue009"],"file":"gui/font/screens/background.png","ascent":512,"height":2500},
     {"type":"bitmap","chars":["\ue010"],"file":"gui/font/misc/logo.png","ascent":89,"height":90},
-    {"type":"bitmap","chars":["\ue011"],"file":"gui/font/misc/info.png","ascent":8,"height":108}
+    {"type":"bitmap","chars":["\ue011"],"file":"gui/font/misc/info.png","ascent":8,"height":108},
+    {"type":"bitmap","chars":["\ue012"],"file":"gui/font/rank/admin.png","ascent":8,"height":10},
+    {"type":"bitmap","chars":["\ue013"],"file":"gui/font/rank/dev.png","ascent":8,"height":10},
+    {"type":"bitmap","chars":["\ue014"],"file":"gui/font/rank/mod.png","ascent":8,"height":10},
+    {"type":"bitmap","chars":["\ue015"],"file":"gui/font/rank/youtube.png","ascent":8,"height":10}
 ]}
