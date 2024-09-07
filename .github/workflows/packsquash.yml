@@ -17,10 +17,11 @@ jobs:
             pack_directory = '.'
             output_file_path = 'GameOfLife.zip'
             recompress_compressed_files = true
-            zip_compression_iterations = 60
+            zip_compression_iterations = 30
             zip_spec_conformance_level = 'disregard'
             ['**/*?.{json,jem,jpm,mcmeta,bbmodel}']
             always_allow_json_comments = false
+            ['**/*?.png']
             image_data_compression_iterations = 15
       - uses: softprops/action-gh-release@v2
         with:
