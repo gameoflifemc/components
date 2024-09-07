@@ -1,10 +1,11 @@
-name: optimize resource pack
-on: push
+# This workflow will build the ZIP with PackSquash and create a new release with it.
+name: Build ZIP and create release
+on: [push]
 permissions: 
   actions: read
   contents: write
 jobs:
-  packsquash:
+  build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
