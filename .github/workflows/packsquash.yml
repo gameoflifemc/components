@@ -1,33 +1,28 @@
-name: Game of Life resource pack
+name: optimize resource pack
 on: push
 permissions: 
   actions: read
   contents: write
 jobs:
   packsquash:
-    name: optimize pack
     runs-on: ubuntu-latest
     steps:
-      - name: clone repository
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
         with:
           fetch-depth: 0
-      - name: run PackSquash
-        uses: ComunidadAylas/PackSquash-action@v4
+      - uses: ComunidadAylas/PackSquash-action@v4
         with:
           packsquash_version: latest
           options: |
             pack_directory = '.'
             output_file_path = 'GameOfLife.zip'
             recompress_compressed_files = true
-            allow_mods = ['OptiFine']
+            zip_compression_iterations = 60
             zip_spec_conformance_level = 'disregard'
             ['**/*?.{json,jem,jpm,mcmeta,bbmodel}']
             always_allow_json_comments = false
-            ['assets/minecraft/texts/postcredits.txt']
-            force_include = true
-      - name: create release
-        uses: softprops/action-gh-release@v2
+            image_data_compression_iterations = 15
+      - uses: softprops/action-gh-release@v2
         with:
           tag_name: v${{github.run_number}}
           files: GameOfLife.zip
