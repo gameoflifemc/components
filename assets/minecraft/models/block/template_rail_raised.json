@@ -1,0 +1,18 @@
+{
+	"credit": "Made by Zartrix, WeNAN Studios",
+	"ambientocclusion": false,
+	"textures": {
+		"particle": "#rail"
+	},
+	"elements": [
+		{
+			"from": [0, 9, -1.625],
+			"to": [16, 9, 19.625],
+			"rotation": {"angle": 45, "axis": "x", "origin": [8, 9, 8], "rescale": true},
+			"faces": {
+				"up": {"uv": [0, 0, 16, 16], "rotation": 180, "texture": "#rail"},
+				"down": {"uv": [0, 16, 16, 0], "rotation": 180, "texture": "#rail"}
+			}
+		}
+	]
+}

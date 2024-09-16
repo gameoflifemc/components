@@ -1,0 +1,30 @@
+{
+	"credit": "Made by Zartrix",
+	"ambientocclusion": false,
+	"textures": {
+		"particle": "block/mangrove_propagule_age_0",
+		"sapling": "block/mangrove_propagule_age_0"
+	},
+	"elements": [
+		{
+			"name": "leaves",
+			"from": [4.5, 0, 8],
+			"to": [11.5, 6, 8],
+			"rotation": {"angle": 45, "axis": "y", "origin": [8, 0, 8], "rescale": true},
+			"faces": {
+				"north": {"uv": [4, 10, 11, 16], "texture": "#sapling"},
+				"south": {"uv": [4, 10, 11, 16], "texture": "#sapling"}
+			}
+		},
+		{
+			"name": "leaves",
+			"from": [8, 0, 4.5],
+			"to": [8, 6, 11.5],
+			"rotation": {"angle": 45, "axis": "y", "origin": [8, 0, 8], "rescale": true},
+			"faces": {
+				"east": {"uv": [4, 10, 11, 16], "texture": "#sapling"},
+				"west": {"uv": [4, 10, 11, 16], "texture": "#sapling"}
+			}
+		}
+	]
+}

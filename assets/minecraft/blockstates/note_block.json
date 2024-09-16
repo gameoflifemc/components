@@ -1,0 +1,26 @@
+{
+  "variants": {
+		"instrument=banjo":				{ "model": "minecraft:block/note_block_banjo" },
+		"instrument=basedrum":			{ "model": "minecraft:block/note_block_basedrum" },  
+		"instrument=bass":				{ "model": "minecraft:block/note_block_bass" },
+		"instrument=bell":				{ "model": "minecraft:block/note_block_bell" },
+		"instrument=bit":				{ "model": "minecraft:block/note_block_bit" },	
+		"instrument=chime":				{ "model": "minecraft:block/note_block_chime" },
+		"instrument=cow_bell":			{ "model": "minecraft:block/note_block_cow_bell" },
+		"instrument=didgeridoo":		{ "model": "minecraft:block/note_block_didgeridoo" },	
+		"instrument=flute": 			{ "model": "minecraft:block/note_block_flute" },
+		"instrument=guitar":			{ "model": "minecraft:block/note_block_guitar" },
+		"instrument=harp": 				{ "model": "minecraft:block/note_block_harp" },	
+		"instrument=hat": 				{ "model": "minecraft:block/note_block_hat" },
+		"instrument=iron_xylophone":	{ "model": "minecraft:block/note_block_iron_xylophone" },
+		"instrument=pling": 			{ "model": "minecraft:block/note_block_pling" },	
+		"instrument=snare": 			{ "model": "minecraft:block/note_block_snare" },
+		"instrument=xylophone": 		{ "model": "minecraft:block/note_block_xylophone" },
+		"instrument=creeper": 			{ "model": "minecraft:block/note_block_creeper" },
+		"instrument=zombie": 			{ "model": "minecraft:block/note_block_zombie" },
+		"instrument=dragon": 			{ "model": "minecraft:block/note_block_ender_dragon" },
+		"instrument=piglin": 			{ "model": "minecraft:block/note_block_piglin" },
+		"instrument=skeleton": 			{ "model": "minecraft:block/note_block_skeleton" },
+		"instrument=wither_skeleton": 	{ "model": "minecraft:block/note_block_wither_skeleton" }
+	}
+}
