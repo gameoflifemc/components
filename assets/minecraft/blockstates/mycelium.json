@@ -12,6 +12,5 @@
       { "model": "minecraft:block/mycelium_snow", "y": 180 },
       { "model": "minecraft:block/mycelium_snow", "y": 270 }
     ]
-    }
   }
 }

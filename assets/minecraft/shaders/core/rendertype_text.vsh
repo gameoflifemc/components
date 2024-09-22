@@ -25,8 +25,8 @@ void main() {
     float opacity = Color.a;
     vec4 addend;
     if (depth == 2400.06) {
-        float time = fract(GameTime * 600.0) / 4;
-        addend = vec4(time, -time, 0.0, 0.0);
+        float movement = fract(GameTime * 60.0) / 4;
+        addend = vec4(0.0, movement, 0.0, 0.0);
     } else {
         addend = vec4(0.0);
     }

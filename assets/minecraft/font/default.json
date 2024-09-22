@@ -11,7 +11,7 @@
     {"type":"bitmap","chars":["\uE006"],"file":"gui/font/icon/shift.png","ascent":9,"height":12},
     {"type":"bitmap","chars":["\uE007"],"file":"gui/font/icon/rightclick.png","ascent":9,"height":11},
     {"type":"bitmap","chars":["\uE008"],"file":"gui/font/icon/leftclick.png","ascent":9,"height":11},
-    {"type":"bitmap","chars":["\uE009"],"file":"gui/font/hud/background.png","ascent":512,"height":2500},
+    {"type":"bitmap","chars":["\uE009"],"file":"gui/font/hud/background/black.png","ascent":512,"height":2500},
     {"type":"bitmap","chars":["\uE010"],"file":"gui/font/hud/logo.png","ascent":89,"height":90},
     {"type":"bitmap","chars":["\uE011"],"file":"gui/font/hud/info.png","ascent":8,"height":108},
     {"type":"bitmap","chars":["\uE012"],"file":"gui/font/rank/admin.png","ascent":8,"height":10},

@@ -11,10 +11,9 @@ uniform float FogEnd;
 uniform float GameTime;
 
 in float vertexDistance;
-in vec4 vertexColor;
-in vec3 Position;
-in vec2 texCoord0;
 in float depth;
+in vec4 vertexColor;
+in vec2 texCoord0;
 
 out vec4 fragColor;
 
@@ -45,33 +44,20 @@ void main() {
 		color = vec4(0.0, 0.0, 0.0, 0.0);
 	} else
     // icons
-    if (opacity > 0.49 && opacity < 0.51) {
+    if ((opacity > 0.996 && opacity < 0.997) || (opacity > 0.501 && opacity < 0.502)) {
         if (mod(depth, 1.0) == 0.0) {
             // remove icon shadows
             discard;
-        } else {
-            // return full opacity to icons
-            color.a = 1.0;
         }
-        if (r >= 0.09 && r <= 0.1 && g == 0.0 && b >= 21.5 / 255.0 && b <= 36.5 / 255.0) {
-            // loading wheel animation
-            float c = 1.0 - fract(GameTime * 1200) - 0.125 * (int(b * 255.0) % 20 / 2);
-            if (c <= 0.0) {
-                c += 1.0;
-            }
-            c += 0.25;
-            color = vec4(c, c, c, 1.0);
+    }
+    // loading wheel
+    if (r >= 0.09 && r <= 0.1 && g == 0.0 && b >= 21.5 / 255.0 && b <= 36.5 / 255.0) {
+        float c = 1.0 - fract(GameTime * 1200) - 0.125 * (int(b * 255.0) % 20 / 2);
+        if (c <= 0.0) {
+            c += 1.0;
         }
-    } else
-    // transparent icons
-    if (opacity > 0.24 && opacity < 0.26) {
-        if (mod(depth, 1.0) == 0.0) {
-            // remove icon shadows
-            discard;
-        } else {
-            // return half opacity to icons
-            color.a = 0.5;
-        }
+        c += 0.25;
+        color = vec4(c, c, c, 1.0);
     }
     // compass
     if (r == 0.0 && g >= 0.09 && g <= 0.1 && b >= 0.5 / 255.0 && b < 49.5 / 255.0) {

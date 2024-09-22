@@ -1,8 +1,8 @@
 {"providers":[
-    {"type":"space","advances":{" ":4,"#":-90}},
-    {"type":"bitmap","file":"gui/font/icon/loading.png","ascent":-20,"height":9,"chars":["$"]},
-    {"type":"bitmap","file":"gui/font/hud/background.png","ascent":512,"height":2500,"chars":["0"]},
-    {"type":"bitmap","file":"gui/font/hud/lobby_help.png","ascent":-2,"height":256,"chars":["@"]},
-    {"type":"bitmap","file":"gui/font/hud/farm.png","ascent":1024,"height":2048,"chars":["1"]},
-    {"type":"bitmap","file":"gui/font/hud/farm_help.png","ascent":45,"height":96,"chars":["2"]}
+    {"type":"space","advances":{" ":4,"#":-90,"+":-1}},
+    {"type":"bitmap","file":"gui/font/hud/background/black.png","ascent":512,"height":2500,"chars":["0"]},
+    {"type":"bitmap","file":"gui/font/hud/tutorial/lobby.png","ascent":-2,"height":256,"chars":["@"]},
+    {"type":"bitmap","file":"gui/font/hud/background/farm.png","ascent":256,"height":512,"chars":["1"]},
+    {"type":"bitmap","file":"gui/font/hud/tutorial/farm_1.png","ascent":21,"height":56,"chars":["2"]},
+    {"type":"bitmap","file":"gui/font/hud/tutorial/farm_2.png","ascent":21,"height":56,"chars":["3"]}
 ]}
