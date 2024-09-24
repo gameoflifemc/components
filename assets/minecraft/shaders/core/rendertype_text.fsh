@@ -44,7 +44,7 @@ void main() {
 		color = vec4(0.0, 0.0, 0.0, 0.0);
 	} else
     // icons
-    if ((opacity > 0.996 && opacity < 0.997) || (opacity > 0.501 && opacity < 0.502)) {
+    if ((opacity > 0.984 && opacity < 0.989) || (opacity > 0.499 && opacity < 0.502)) {
         if (mod(depth, 1.0) == 0.0) {
             // remove icon shadows
             discard;
